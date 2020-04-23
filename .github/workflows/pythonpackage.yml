@@ -1,0 +1,13 @@
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+chatbot = ChatBot("james")
+
+trainer = ChatterBotCorpusTrainer(chatbot)
+trainer.train("chatterbot.corpus.english.ai")
+
+while True:
+    userinput = input()
+    print (userinput)
+    return ('nice work lad')
+    
